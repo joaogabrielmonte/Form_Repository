@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="shortcut icon" href="logooo.png" w type="image/x-icon">
+  <title>Formulário de cadastro</title>
+</head>
+
+<body>
+
+<div class="container">
+  <section class="header">
+    <img src="\assets\img\logooo.png" alt="img logo" id="logoAlcides" width="170">
+    <h2>Alcides Tenório</h2>
+  </section>
+
+  <form id="form" class="form">
+
+    <div class="form-content">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" placeholder="Digite o nome do paciente">
+    </div>
+
+    <div class="form-content">
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" placeholder="Digite o endereço do paciente">
+    </div>
+
+    <div class="form-content">
+      <label for="idade">Idade</label>
+      <input type="number" id="idade" placeholder="Digite a idade do paciente">
+    </div>
+
+    <div class="form-content">
+      <label for="sexo">Sexo</label>
+      <select id="sexo">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+    </div>
+
+    <div class="form-content">
+      <label for="profissao">Profissão</label>
+      <input type="text" id="profissao" placeholder="Digite a profissão do paciente">
+    </div>
+
+    <div class="form-content">
+      <label for="telefone">Telefone</label>
+      <input type="number" id="telefone" placeholder="Digite o telefone do paciente">
+    </div>
+
+    <div class="form-content">
+      <label for="diagnostico_clinico">Diagnóstico clínico</label>
+      <input type="text" id="diagnostico_clinico" placeholder="Digite o diagnóstico clínico do paciente">
+    </div>
+
+    <div class="form-content">
+      <label for="cid">CID</label>
+      <input type="text" id="cid" placeholder="Digite o CID do paciente">
+    </div>
+
+    <div class="form-content">
+      <label for="queixa_principal">Queixa principal</label>
+      <input type="text" id="queixa_principal" placeholder="Digite a queixa principal do paciente">
+    </div>
+
+    <div class="form-content">
+      <label for="hma_hpp_hf">HMA/HPP/HF</label>
+      <select id="hma_hpp_hf">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+    </div>
+
+    <div class="form-content">
+      <label for="pratica_exercicio_fisico">Pratica algum exercício físico?</label>
+      <select id="pratica_exercicio_fisico">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+    </div>
+
+       <div class="form-content">
+         <label for="fuma_cigarros_dia">Fuma cigarros/dia?</label>
+         <input type="number" id="fuma_cigarros_dia" placeholder="Digite o número de cigarros que o paciente fuma por dia" min="0">
+       </div>
+
+     <div class="form-content">
+       <label for="bebida_alcoolica_vezes_semana">Bebida alcoólica vezes por semana</label>
+        <input type="number" id="bebida_alcoolica_vezes_semana" placeholder="Digite o número de vezes por semana que o paciente consome bebida alcoólica" min="0">
+       <br><br>
+        <div class="buttonPdf">
+          <button id="print">Salvar como PDF</button>
+        </div>
+      </div>
+      
+   </div>
+    
+  </form> 
+  
+</div>
+
+<script>
+const printBtn = document.getElementById('print');
+  printBtn.addEventListener('click', function(){
+    print();
+  })</script>
+</html>
+</body>
